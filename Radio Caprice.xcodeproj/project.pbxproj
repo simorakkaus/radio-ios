@@ -14,6 +14,8 @@
 		24F64B091E4DCFDA005FD5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F64B071E4DCFDA005FD5E0 /* LaunchScreen.storyboard */; };
 		24F64B141E4DCFDB005FD5E0 /* Radio_CapriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F64B131E4DCFDB005FD5E0 /* Radio_CapriceTests.swift */; };
 		24F64B1F1E4DCFDB005FD5E0 /* Radio_CapriceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F64B1E1E4DCFDB005FD5E0 /* Radio_CapriceUITests.swift */; };
+		24F64B2F1E4E83F5005FD5E0 /* StationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F64B2E1E4E83F5005FD5E0 /* StationsController.swift */; };
+		24F64B311E4E8586005FD5E0 /* StationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F64B301E4E8586005FD5E0 /* StationsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		24F64B1A1E4DCFDB005FD5E0 /* Radio CapriceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Radio CapriceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F64B1E1E4DCFDB005FD5E0 /* Radio_CapriceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio_CapriceUITests.swift; sourceTree = "<group>"; };
 		24F64B201E4DCFDB005FD5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F64B2E1E4E83F5005FD5E0 /* StationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationsController.swift; sourceTree = "<group>"; };
+		24F64B301E4E8586005FD5E0 /* StationsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				24F64AFE1E4DCFDA005FD5E0 /* AppDelegate.swift */,
 				24F64B001E4DCFDA005FD5E0 /* ViewController.swift */,
+				24F64B2E1E4E83F5005FD5E0 /* StationsController.swift */,
+				24F64B301E4E8586005FD5E0 /* StationsCell.swift */,
 				24F64B021E4DCFDA005FD5E0 /* Main.storyboard */,
 				24F64B051E4DCFDA005FD5E0 /* Assets.xcassets */,
 				24F64B071E4DCFDA005FD5E0 /* LaunchScreen.storyboard */,
@@ -264,6 +270,8 @@
 			files = (
 				24F64B011E4DCFDA005FD5E0 /* ViewController.swift in Sources */,
 				24F64AFF1E4DCFDA005FD5E0 /* AppDelegate.swift in Sources */,
+				24F64B311E4E8586005FD5E0 /* StationsCell.swift in Sources */,
+				24F64B2F1E4E83F5005FD5E0 /* StationsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
