@@ -44,13 +44,16 @@ class ViewController: UIViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        pulseAnimation()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        UIView.animate(withDuration: 1.4, delay: 0.0, options: [.autoreverse, .curveEaseInOut, .repeat], animations: {
-            self.redDot.alpha = 0.0
-        }, completion: nil)
+        pulseAnimation()
         
         volumeIcon.image = volumeIcon.image?.maskWithColor(color: UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0))
         favIcon.image = favIcon.image?.maskWithColor(color: UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0))
@@ -68,7 +71,12 @@ class ViewController: UIViewController {
         return .lightContent
     }
 
-
+    func pulseAnimation() {
+        UIView.animate(withDuration: 1.4, delay: 0.0, options: [.autoreverse, .curveEaseInOut, .repeat], animations: {
+            self.redDot.alpha = 0.0
+        }, completion: nil)
+    }
+    
 }
 
 extension UIImage {
@@ -95,6 +103,5 @@ extension UIImage {
             return nil
         }
     }
-    
 }
 

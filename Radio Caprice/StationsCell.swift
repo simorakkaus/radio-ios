@@ -10,6 +10,8 @@ import UIKit
 
 class StationsCell: UITableViewCell {
 
+    @IBOutlet weak var lock: UIImageView!
+    @IBOutlet weak var subGenre: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

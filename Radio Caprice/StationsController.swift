@@ -10,6 +10,7 @@ import UIKit
 
 class StationsController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
     @IBAction func closeButton(_ sender: Any) {
         if((self.presentingViewController) != nil){
             self.dismiss(animated: true, completion: nil)
@@ -59,14 +60,20 @@ class StationsController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StationsCell", for: indexPath) as! StationsCell
-
-        cell.textLabel?.textColor = UIColor.white
         
-        cell.textLabel?.text = subGenres[indexPath.row][indexPath.row]
+        cell.subGenre.text = subGenres[indexPath.section][indexPath.row]
+        
+        if indexPath.row != 0 {
+            cell.lock.image = UIImage(named: "Lock")?.maskWithColor(color:  UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0))
+        } else {
+            cell.lock.image = nil
+        }
         
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    }
 
     /*
     // MARK: - Navigation
